@@ -1,0 +1,28 @@
+{
+  "name": "stealthsalary-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node scripts/genabi.mjs && next dev",
+    "dev:mock": "node scripts/is-hardhat-node-running.mjs && node scripts/genabi.mjs && next dev",
+    "build": "next build",
+    "check:static": "node scripts/check-static.mjs"
+  },
+  "dependencies": {
+    "@fhevm/mock-utils": "^0.3.0-1",
+    "@zama-fhe/relayer-sdk": "^0.3.0-5",
+    "ethers": "6.13.2",
+    "next": "14.2.8",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "19.2.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "5.6.3"
+  }
+}
